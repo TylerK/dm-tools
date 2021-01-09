@@ -1,2 +1,3 @@
-# dm-tools
-Electron based application to aid DM's in their campaigns.
+# DM Tools
+
+Electron based application to aid dungeon masters in their campaigns.
