@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 const path = require('path')
 
 // Electron Webpack Configuration
@@ -47,6 +48,21 @@ const reactConfiguration = {
                 include: /src/,
                 use: [{ loader: 'ts-loader' }],
             },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.svg$/,
+                use: [
+                    {
+                        loader: 'svg-sprite-loader',
+                        options: {
+                            symbolId: 'icon-[name]',
+                        },
+                    },
+                ],
+            },
         ],
     },
     output: {
@@ -56,6 +72,9 @@ const reactConfiguration = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.html',
+        }),
+        new CopyPlugin({
+            patterns: [{ from: 'static', to: '.' }],
         }),
     ],
 }

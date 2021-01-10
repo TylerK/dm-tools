@@ -30,9 +30,14 @@
         "@types/electron": "^1.6.10",
         "@types/react": "^17.0.0",
         "@types/react-dom": "^17.0.0",
+        "@types/styled-components": "^5.1.7",
+        "copy-webpack-plugin": "^7.0.0",
+        "css-loader": "^5.0.1",
         "electron": "^12.0.0-beta.12",
         "html-webpack-plugin": "^4.5.1",
         "jest": "^26.6.3",
+        "style-loader": "^2.0.0",
+        "svg-sprite-loader": "^5.2.1",
         "testing-library": "^0.0.2",
         "ts-loader": "^8.0.14",
         "ts-node": "^9.1.1",
@@ -49,6 +54,7 @@
         "react-router": "^5.2.0",
         "react-router-dom": "^5.2.0",
         "recoil": "^0.1.2",
+        "rsuite": "^4.8.6",
         "styled-components": "^5.2.1"
     },
     "config": {
