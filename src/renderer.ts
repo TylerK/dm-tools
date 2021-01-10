@@ -27,4 +27,4 @@
  */
 
 import 'rsuite/dist/styles/rsuite-dark.css'
-import './app'
+import './App'
